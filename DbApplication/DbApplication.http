@@ -1,0 +1,29 @@
+﻿@DbApplication_HostAddress = https://localhost:7292
+
+POST {{DbApplication_HostAddress}}/departments
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name":"Development"
+}
+###
+
+POST {{DbApplication_HostAddress}}/departments
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name":"HR"
+}
+###
+
+POST {{DbApplication_HostAddress}}/employees
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name":"Anna",
+  "DepartmentId": 1
+}
+###
